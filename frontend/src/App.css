@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: sans-serif;
+    background: #FCF6D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+button {
+    cursor: pointer;
+}
+
+.contacts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px;
+}
+
+.h1Users {
+    text-align: center;
+    margin-bottom: 45px;
+    margin-top: 40px;
+}
+
+.p-users {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.app {
+
+    width: 70vw;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #9CC6DB;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    /* top:0; right:0; bottom:0; left:0 */
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.3);
+    /* optional dimming */
+    z-index: 999;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #DDBA7D;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 300px;
+    width: 400px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 200px;
+}
+
+.form label {
+    align-self: center;
+    font-weight: bold;
+
+}
+
+.form button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #CF4B00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    align-self: center;
+}
+
+.create_new_user {
+    padding: 10px 15px;
+    margin: 10px 20px;
+    background-color: #CF4B00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.close_button {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    float: right;
+}
+
+.t_column {
+    font-weight: bold;
+
+}
+
+.td {
+    text-align: center;
+    padding: 10px;
+    width: 140px;
+}
+
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+
+.contact-card span {
+    width: 120px;
+    text-align: center;
+}
+
+.buttons_container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.update_button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+
+}
+
+.delete_button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.delete_button img {
+    width: 12px;
+    height: 12px;
+}
+
+.update_button img {
+    width: 12px;
+    height: 12px;
+}
