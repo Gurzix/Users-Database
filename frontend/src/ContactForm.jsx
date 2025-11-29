@@ -24,19 +24,19 @@ const ContactForm = ({ existingContact = {}, updateCallback }) => {
             const response = await axios({
                 method: updating ? "patch" : "post",
                 url: url,
-                data: data, // axios sam ustawia Content-Type i serializuje JSON
+                data: data,
             });
 
-            // Jeśli request się powiedzie (status 200/201), axios wejdzie tutaj:
+           
             updateCallback();
 
         } catch (error) {
 
-            // Jeśli backend zwróci błąd (np. 400, 500), axios trafi tutaj
+          j
             if (error.response) {
                 alert(error.response.data.message);
             } else {
-                alert("Wystąpił błąd sieci");
+                alert("Network error");
             }
         }
     }
